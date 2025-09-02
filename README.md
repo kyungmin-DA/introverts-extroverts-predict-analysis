@@ -7,7 +7,17 @@
     * 주어진 대회 데이터를 바탕으로, 응답자의 성격 유형(내향형/외향형)을 예측하는 머신러닝 모델을 개발하고 성능을 최적화하는 것을 목표로 합니다.
 * **분석 기간:** 2025-06-14 ~ 2025-06-25
 * **사용 데이터:** [Kaggle Playground Series - S5E7 Dataset](https://www.kaggle.com/competitions/playground-series-s5e7/data), [Extrovert vs. Introvert Behavior Data](https://www.kaggle.com/datasets/rakeshkapilavai/extrovert-vs-introvert-behavior-data/data)
-
+%md
+| 컬럼명                             | 한글 해석      | 설명                                            |
+| ------------------------------- | ---------- | --------------------------------------------- |
+| **id**                          | 아이디        | 각 데이터를 구분하는 고유 번호 (학생번호, 설문번호 등)              |
+| **Time\_spent\_Alone**          | 혼자 보낸 시간   | 혼자 있는 데 쓴 시간 (하루/일주일 단위 등, 단위는 데이터에 따라 다름)    |
+| **Stage\_fear**                 | 무대 공포      | 무대 공포(사람들 앞에서 발표하거나 공연할 때 두려움이 있는지 여부, 혹은 점수) |
+| **Social\_event\_attendance**   | 사교 행사 참석   | 사교적 행사(모임, 파티, 동호회 등) 참석 빈도 또는 횟수             |
+| **Going\_outside**              | 외출 빈도      | 집 밖으로 나가는 빈도, 얼마나 자주 외출하는지                    |
+| **Drained\_after\_socializing** | 사회활동 후 피로감 | 사회활동(사람들과 어울림) 후에 피곤함을 느끼는지 여부 또는 정도          |
+| **Friends\_circle\_size**       | 친구 모임 크기   | 가까운 친구의 수, 친구 집단(모임)의 규모                      |
+| **Post\_frequency**             | 게시물 업로드 빈도 | SNS 등에서 게시물(글, 사진 등)을 얼마나 자주 올리는지             |
 
 ## 2. 주요 분석 내용 (Key Features)
 
