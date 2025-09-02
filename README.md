@@ -53,10 +53,9 @@
       
  * **PCA 바이플롯(Biplot) 시각화:**
     * 주성분 분석 결과를 바이플롯으로 시각화한 결과, 데이터 포인트들이 **PC1 축을 기준으로 명확하게 두 개의 군집(Cluster)으로 나뉘는 것**을 확인할 수 있었습니다.
-    * 오른쪽 군집은 `Stage_fear`, `Drained_after_socializing` 변수와 같은 방향에 위치하며 **내향성 그룹**을, 왼쪽 군집은 `Friends_circle_size` 등 사회적 활동 변수들과 같은 방향에 위치하며 **외향성 그룹**을 나타냅니다.
+    * 오른쪽 군집은 `Stage_fear`, `Drained_after_socializing` 변수와 같은 방향에 위치하며 **내향성 그룹**을, 왼쪽 군집은 `Friends_circle_size` 등 사회적 활동 변수들과 같은 방향      에 위치하며 **외향성 그룹**을 나타냅니다.
     * 이는 앞서 분석한 상관관계와 정확히 일치하는 결과로, **데이터가 두 성향에 따라 선형적으로 잘 구분되는 구조**임을 시각적으로 증명합니다.
-
-    ![PCA Biplot of Personality Data](이미지_파일_경로.png)
+    ![PCA Biplot of Personality Data](https://github.com/kyungmin-DA/predict-the-introverts-extroverts-analysis/blob/picture/pca_2d.png?raw=true)
 
  
 
@@ -79,7 +78,6 @@
     * 앙상블 모델이 어떤 변수를 중요하게 보고 예측을 수행했는지 확인하기 위해 특성 중요도를 분석했습니다.
     * 분석 결과, **'친구 수(Friends_circle_size)'**와 **'혼자 보내는 시간(Time_spent_Alone)'**이 내/외향인을 구분하는 가장 결정적인 변수로 나타났습니다.
     * 반면, '무대 공포증'이나 '사교 활동 후 피로감'과 같이 주관적인 감정 상태를 나타내는 변수들은 상대적으로 낮은 중요도를 기록했습니다.
-
     ![Feature Importance Chart](여기에_Feature_Importance_이미지_경로.png)
 
 ## 3. 결론 및 인사이트
