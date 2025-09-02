@@ -1,6 +1,6 @@
-# 내향인과 외향인 예측 분석 프로젝트(kaggle playground, 2025)
+# 내향인과 외향인 예측 분석 프로젝트(2025)
 
-## 1. 프로젝트 개요 (Introduction)
+## 1. 프로젝트 개요
 
 * **분석 배경 및 목적:**
     * 이 프로젝트는 Kaggle의 'Playground Series - S5E7' 참여를 위해 진행되었습니다.
@@ -21,7 +21,7 @@
 | **Post\_frequency**             | 게시물 업로드 빈도 | SNS 등에서 게시물(글, 사진 등)을 얼마나 자주 올리는지             |
 
 
-## 2. 주요 분석 내용 (Key Features)
+## 2. 주요 분석 내용
 
 ### 가. 데이터 전처리 (Data Preprocessing)
 
@@ -82,7 +82,7 @@
 
     ![Feature Importance Chart](여기에_Feature_Importance_이미지_경로.png)
 
-## 3. 결론 및 인사이트 (Conclusion & Insights)
+## 3. 결론 및 인사이트
 
 ### 가. 프로젝트 요약
 3개의 데이터셋을 통합하고, `CatBoost`, `XGBoost`, `LightGBM` 모델을 소프트 보팅 방식으로 앙상블하여 Kaggle Private Score 기준 **0.9676**의 높은 예측 성능을 달성했습니다. 특히 모델 분석 결과, 개인의 **객관적인 사회적 활동 패턴**이 주관적 감정 상태보다 성향을 더 잘 예측하는 핵심 지표임을 발견했습니다.
@@ -95,7 +95,7 @@
 * **클래스 불균형 해소:** 'Introvert' 클래스의 예측 성능이 근소하게 낮았던 점을 고려할 때, 향후 **SMOTE와 같은 오버샘플링 기법**으로 데이터 불균형을 해소한다면 소수 클래스의 예측 정확도를 더욱 높일 수 있을 것입니다.
 * **무분별한 차원 축소의 함정:** EDA 과정에서 시도한 PCA가 오히려 성능을 저하시키는 결과를 통해, 모든 변수가 모델에게 유의미한 정보를 제공하고 있으며 **인위적인 차원 축소가 항상 성능 향상으로 이어지지는 않는다는 교훈**을 얻었습니다.
 
-## 4. 사용 기술 (Tech Stack)
+## 4. 사용 기술
 
 * **Language:** Python
 * **Libraries:** Pandas, NumPy, Scikit-learn, CatBoost, XGBoost, LightGBM, Matplotlib, Seaborn
