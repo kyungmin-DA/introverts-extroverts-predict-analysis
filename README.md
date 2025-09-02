@@ -71,8 +71,7 @@
     * 훈련된 모델의 객관적인 성능을 측정하기 위해, 전체 훈련 데이터의 20%를 검증용 데이터셋으로 분리하여 평가를 진행했습니다.
     * 그 결과, **약 96%의 정확도(Accuracy)**와 **0.97의 ROC AUC 점수**를 달성하여, 모델이 내/외향인을 매우 높은 수준으로 판별함을 확인했습니다.
     * 아래 혼동 행렬(Confusion Matrix)에서 볼 수 있듯, 모델의 오분류 사례가 매우 적은 것을 직관적으로 파악할 수 있습니다.
-
-<Confusion Matrix for Personality Prediction>
+ 
 | **모델 (Model)** | **Accuracy** | **Precision** | **Recall** | **F1-Score** | **ROC-AUC** |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **로지스틱 회귀 (Logistic Regression)** | 0.82 | 0.85 | 0.78 | 0.81 | 0.88 |
@@ -81,11 +80,13 @@
 | **XGBoost** | 0.87 | 0.88 | 0.85 | 0.86 | 0.93 |
 | **LightGBM** | 0.87 | 0.89 | 0.85 | 0.87 | 0.93 |
 
+
 * **핵심 예측 변수 확인 (Feature Importance):**
     * 앙상블 모델이 어떤 변수를 중요하게 보고 예측을 수행했는지 확인하기 위해 특성 중요도를 분석했습니다.
     * 분석 결과, **'친구 수(Friends_circle_size)'**와 **'혼자 보내는 시간(Time_spent_Alone)'**이 내/외향인을 구분하는 가장 결정적인 변수로 나타났습니다.
     * 반면, '무대 공포증'이나 '사교 활동 후 피로감'과 같이 주관적인 감정 상태를 나타내는 변수들은 상대적으로 낮은 중요도를 기록했습니다.
-    ![Feature Importance Chart](<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/8c7c8a3a-e134-4644-b912-458a12e8de57"/>)
+    ![Feature Importance Chart](<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/5612bd66-75cf-4b71-973a-26d137154953" />)
+
 
 ## 3. 결론 및 인사이트
 
