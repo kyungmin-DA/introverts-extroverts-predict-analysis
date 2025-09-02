@@ -1,4 +1,4 @@
-내향인과 외향인 예측 분석 프로젝트(kaggle playground, 2025)
+# 내향인과 외향인 예측 분석 프로젝트(kaggle playground, 2025)
 
 ## 1. 프로젝트 개요 (Introduction)
 
