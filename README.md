@@ -1,4 +1,4 @@
-# predict-the-introverts-extroverts-analysis
+<img width="548" height="432" alt="image" src="https://github.com/user-attachments/assets/be4ce84b-46d0-414f-a2f9-6ae311e3525f" /># predict-the-introverts-extroverts-analysis
 내향인과 외향인 예측 분석 프로젝트(kaggle playground, 2025)
 
 ## 1. 프로젝트 개요 (Introduction)
@@ -36,11 +36,15 @@
 * **특성 스케일링 (Feature Scaling):**
     * 모델 훈련 전, `StandardScaler`를 이용해 모든 특성(feature)의 스케일을 통일했습니다. 이를 통해 특정 변수가 모델에 과도한 영향을 미치는 것을 방지하고 안정적인 학습을 유도했습니다.
 * **앙상블 모델 구축:**
-    * 성능이 검증된 3개의 그래디언트 부스팅 모델(`CatBoost`, `XGBoost`, `LightGBM`)을 기본 모델로 선정했습니다.
+    * 성능이 검증된 3개의 그래디언트 부스팅 모델(`CatBoost`, `XGBoost`, `LightGM`)을 기본 모델로 선정했습니다.
     * `VotingClassifier`를 사용하여 세 모델의 예측 확률값을 종합적으로 고려하는 **소프트 보팅(Soft Voting)** 방식을 채택하여 최종 예측의 신뢰도를 높였습니다.
 
-* 모델 성능을 어떻게 평가했는지 지표를 함께 보여줍니다. (예: Accuracy, F1-Score, ROC-AUC 등)
-    * **Kaggle Public Score / Private Score:** XXX점
+* **모델 성능 평가:**
+    * 훈련된 모델의 객관적인 성능을 측정하기 위해, 전체 훈련 데이터의 20%를 검증용 데이터셋으로 분리하여 평가를 진행했습니다.
+    * 그 결과, **약 96%의 정확도(Accuracy)**와 **0.97의 ROC AUC 점수**를 달성하여, 모델이 내/외향인을 매우 높은 수준으로 판별함을 확인했습니다.
+    * 아래 혼동 행렬(Confusion Matrix)에서 볼 수 있듯, 모델의 오분류 사례가 매우 적은 것을 직관적으로 파악할 수 있습니다.
+<img width="548" height="432" alt="image" src="https://github.com/user-attachments/assets/e4009a69-890b-4c30-87ec-0cb68b720621" />
+
 
 ## 3. 결론 및 인사이트 (Conclusion & Insights)
 
