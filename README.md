@@ -9,16 +9,16 @@
 * **사용 데이터:** [Kaggle Playground Series - S5E7 Dataset](https://www.kaggle.com/competitions/playground-series-s5e7/data), [Extrovert vs. Introvert Behavior Data](https://www.kaggle.com/datasets/rakeshkapilavai/extrovert-vs-introvert-behavior-data/data)
 
 
-| 컬럼명                             | 한글 해석      | 설명                                            |
-| ------------------------------- | ---------- | --------------------------------------------- |
-| **id**                          | 아이디        | 각 데이터를 구분하는 고유 번호 (학생번호, 설문번호 등)              |
-| **Time\_spent\_Alone**          | 혼자 보낸 시간   | 혼자 있는 데 쓴 시간 (하루/일주일 단위 등, 단위는 데이터에 따라 다름)    |
-| **Stage\_fear**                 | 무대 공포      | 무대 공포(사람들 앞에서 발표하거나 공연할 때 두려움이 있는지 여부, 혹은 점수) |
-| **Social\_event\_attendance**   | 사교 행사 참석   | 사교적 행사(모임, 파티, 동호회 등) 참석 빈도 또는 횟수             |
-| **Going\_outside**              | 외출 빈도      | 집 밖으로 나가는 빈도, 얼마나 자주 외출하는지                    |
-| **Drained\_after\_socializing** | 사회활동 후 피로감 | 사회활동(사람들과 어울림) 후에 피곤함을 느끼는지 여부 또는 정도          |
-| **Friends\_circle\_size**       | 친구 모임 크기   | 가까운 친구의 수, 친구 집단(모임)의 규모                      |
-| **Post\_frequency**             | 게시물 업로드 빈도 | SNS 등에서 게시물(글, 사진 등)을 얼마나 자주 올리는지             |
+   | 컬럼명                             | 한글 해석      | 설명                                            |
+   | ------------------------------- | ---------- | --------------------------------------------- |
+   | **id**                          | 아이디        | 각 데이터를 구분하는 고유 번호 (학생번호, 설문번호 등)              |
+   | **Time\_spent\_Alone**          | 혼자 보낸 시간   | 혼자 있는 데 쓴 시간 (하루/일주일 단위 등, 단위는 데이터에 따라 다름)    |
+   | **Stage\_fear**                 | 무대 공포      | 무대 공포(사람들 앞에서 발표하거나 공연할 때 두려움이 있는지 여부, 혹은 점수) |
+   | **Social\_event\_attendance**   | 사교 행사 참석   | 사교적 행사(모임, 파티, 동호회 등) 참석 빈도 또는 횟수             |
+   | **Going\_outside**              | 외출 빈도      | 집 밖으로 나가는 빈도, 얼마나 자주 외출하는지                    |
+   | **Drained\_after\_socializing** | 사회활동 후 피로감 | 사회활동(사람들과 어울림) 후에 피곤함을 느끼는지 여부 또는 정도          |
+   | **Friends\_circle\_size**       | 친구 모임 크기   | 가까운 친구의 수, 친구 집단(모임)의 규모                      |
+   | **Post\_frequency**             | 게시물 업로드 빈도 | SNS 등에서 게시물(글, 사진 등)을 얼마나 자주 올리는지             |
 
 
 ## 2. 주요 분석 내용
@@ -72,13 +72,13 @@
     * 그 결과, **약 96%의 정확도(Accuracy)**와 **0.97의 ROC AUC 점수**를 달성하여, 모델이 내/외향인을 매우 높은 수준으로 판별함을 확인했습니다.
     * 아래 혼동 행렬(Confusion Matrix)에서 볼 수 있듯, 모델의 오분류 사례가 매우 적은 것을 직관적으로 파악할 수 있습니다.
  
-| **모델 (Model)** | **Accuracy** | **Precision** | **Recall** | **F1-Score** | **ROC-AUC** |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **로지스틱 회귀 (Logistic Regression)** | 0.82 | 0.85 | 0.78 | 0.81 | 0.88 |
-| **결정 트리 (Decision Tree)** | 0.78 | 0.79 | 0.77 | 0.78 | 0.82 |
-| **랜덤 포레스트 (Random Forest)** | **0.88** | **0.90** | **0.86** | **0.88** | **0.94** |
-| **XGBoost** | 0.87 | 0.88 | 0.85 | 0.86 | 0.93 |
-| **LightGBM** | 0.87 | 0.89 | 0.85 | 0.87 | 0.93 |
+      | **모델 (Model)** | **Accuracy** | **Precision** | **Recall** | **F1-Score** | **ROC-AUC** |
+      | :--- | :---: | :---: | :---: | :---: | :---: |
+      | **로지스틱 회귀 (Logistic Regression)** | 0.82 | 0.85 | 0.78 | 0.81 | 0.88 |
+      | **결정 트리 (Decision Tree)** | 0.78 | 0.79 | 0.77 | 0.78 | 0.82 |
+      | **랜덤 포레스트 (Random Forest)** | **0.88** | **0.90** | **0.86** | **0.88** | **0.94** |
+      | **XGBoost** | 0.87 | 0.88 | 0.85 | 0.86 | 0.93 |
+      | **LightGBM** | 0.87 | 0.89 | 0.85 | 0.87 | 0.93 |
 
 
 * **핵심 예측 변수 확인 (Feature Importance):**
@@ -86,7 +86,7 @@
     * 분석 결과, **'친구 수(Friends_circle_size)'**와 **'혼자 보내는 시간(Time_spent_Alone)'**이 내/외향인을 구분하는 가장 결정적인 변수로 나타났습니다.
     * 반면, '무대 공포증'이나 '사교 활동 후 피로감'과 같이 주관적인 감정 상태를 나타내는 변수들은 상대적으로 낮은 중요도를 기록했습니다.
     
-    ![Feature Importance Chart](<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/5612bd66-75cf-4b71-973a-26d137154953" />)
+    <img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/5612bd66-75cf-4b71-973a-26d137154953" />
 
 
 ## 3. 결론 및 인사이트
