@@ -1,4 +1,3 @@
-<img width="548" height="432" alt="image" src="https://github.com/user-attachments/assets/be4ce84b-46d0-414f-a2f9-6ae311e3525f" /># predict-the-introverts-extroverts-analysis
 내향인과 외향인 예측 분석 프로젝트(kaggle playground, 2025)
 
 ## 1. 프로젝트 개요 (Introduction)
