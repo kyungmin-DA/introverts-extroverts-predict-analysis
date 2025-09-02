@@ -44,8 +44,7 @@
     * **내향성 연관 그룹:** `Time_spent_Alone`, `Stage_fear`, `Drained_after_socializing`
     * **외향성 연관 그룹:** `Social_event_attendance`, `Going_outside`, `Friends_circle_size`, `Post_frequency`
     * 이는 특정 행동 패턴들이 특정 성격 유형과 강하게 연결되어 있음을 시사하며, 이후 Feature Importance 결과와도 일맥상통하는 부분이었습니다.
-  ![상관관계 분석]<img width="797" height="688" alt="image" src="https://github.com/user-attachments/assets/5bbcbb6a-80c1-45eb-ac30-6cfac5cadffb" />
-)
+  !(<img width="797" height="688" alt="image" src="https://github.com/user-attachments/assets/5bbcbb6a-80c1-45eb-ac30-6cfac5cadffb" />)
 * **차원 축소 실험 (PCA):**
     * 변수들을 더 적은 수의 주성분으로 압축하여 모델의 복잡도를 줄일 수 있는지 확인하기 위해 주성분 분석(PCA)을 시도했습니다.
     * 분석 결과, 4개의 주성분만으로 전체 데이터 분산의 **96%**를 설명할 수 있음을 확인하며 차원 축소의 가능성을 발견했습니다.
