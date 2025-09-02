@@ -43,7 +43,7 @@
     * 훈련된 모델의 객관적인 성능을 측정하기 위해, 전체 훈련 데이터의 20%를 검증용 데이터셋으로 분리하여 평가를 진행했습니다.
     * 그 결과, **약 96%의 정확도(Accuracy)**와 **0.97의 ROC AUC 점수**를 달성하여, 모델이 내/외향인을 매우 높은 수준으로 판별함을 확인했습니다.
     * 아래 혼동 행렬(Confusion Matrix)에서 볼 수 있듯, 모델의 오분류 사례가 매우 적은 것을 직관적으로 파악할 수 있습니다.
-<img width="548" height="432" alt="image" src="https://github.com/user-attachments/assets/e4009a69-890b-4c30-87ec-0cb68b720621" />
+![Confusion Matrix for Personality Prediction](<img width="548" height="432" alt="image" src="https://github.com/user-attachments/assets/e4009a69-890b-4c30-87ec-0cb68b720621" />)
 
 
 ## 3. 결론 및 인사이트 (Conclusion & Insights)
