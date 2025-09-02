@@ -8,6 +8,8 @@
     * 주어진 데이터를 바탕으로, 응답자의 성격 유형(내향형/외향형)을 예측하는 머신러닝 모델을 개발하고 성능을 최적화하는 것을 목표로 합니다.
 * **분석 기간:** 2025-06-14 ~ 2025-06-25
 * **사용 데이터:** [Kaggle Playground Series - S5E7 Dataset](https://www.kaggle.com/competitions/playground-series-s5e7/data)
+[Extrovert vs. Introvert Behavior Data]
+(https://www.kaggle.com/datasets/rakeshkapilavai/extrovert-vs-introvert-behavior-data/data)
 
 ## 2. 주요 분석 내용 (Key Features)
 
@@ -22,7 +24,7 @@
     * 'Yes'/'No' 형태의 `Stage_fear`, `Drained_after_socializing` 컬럼을 숫자 1/0으로 변환했습니다.
     * 변환 후에도 남아있는 결측치는 가장 빈도가 높은 값인 **최빈값(mode)**으로 채워 데이터의 일관성을 유지했습니다.
 * **데이터 확장 (Data Augmentation):**
-    * 모델의 학습 데이터 양을 늘리고 일반화 성능을 높이기 위해, 주어진 훈련 데이터 외에 **2개의 외부 성격 데이터셋을 추가로 병합**하여 전체 훈련 데이터를 구성했습니다.
+    * 모델의 학습 데이터 양을 늘리고 일반화 성능을 높이기 위해, 주어진 대회용 훈련 데이터 외에 **원본 데이터셋을 추가로 병합**하여 전체 훈련 데이터를 구성했습니다.
 
 
 ### 나. 탐색적 데이터 분석 (EDA)
