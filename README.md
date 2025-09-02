@@ -85,6 +85,7 @@
     * 앙상블 모델이 어떤 변수를 중요하게 보고 예측을 수행했는지 확인하기 위해 특성 중요도를 분석했습니다.
     * 분석 결과, **'친구 수(Friends_circle_size)'**와 **'혼자 보내는 시간(Time_spent_Alone)'**이 내/외향인을 구분하는 가장 결정적인 변수로 나타났습니다.
     * 반면, '무대 공포증'이나 '사교 활동 후 피로감'과 같이 주관적인 감정 상태를 나타내는 변수들은 상대적으로 낮은 중요도를 기록했습니다.
+    
     ![Feature Importance Chart](<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/5612bd66-75cf-4b71-973a-26d137154953" />)
 
 
